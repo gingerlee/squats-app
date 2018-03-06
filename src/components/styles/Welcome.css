@@ -1,0 +1,11 @@
+.intro {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url('./../../assets/images/welcome-image.jpg');
+  opacity: 0.7;
+}
+.text {
+  color: #FFF;
+  padding-top: 25vh;
+}
