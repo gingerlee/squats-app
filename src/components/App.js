@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './../assets/images/logo.svg';
 import './styles/App.css';
 import Welcome from './Welcome';
+import ChallengeHome from './ChallengeHome';
 import { Switch, Route, Link } from 'react-router-dom';
 
 
@@ -61,8 +62,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Welcome/>
-      </div>
+      <Switch>
+
+        <Route exact path='/' render={()=> <Welcome /> } />
+        <Route path='/challenge' render={()=> <ChallengeHome /> } />
+      </Switch>
+    </div>
     );
   }
 }

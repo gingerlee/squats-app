@@ -1,0 +1,8 @@
+a:hover {
+  opacity: .5;
+}
+div {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
