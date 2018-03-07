@@ -65,7 +65,10 @@ class App extends React.Component {
       <Switch>
 
         <Route exact path='/' render={()=> <Welcome /> } />
-        <Route path='/challenge' render={()=> <ChallengeHome workoutList={this.state.workoutsById}/> } />
+        <Route path='/challenge' render={()=> <ChallengeHome
+            workoutList={this.state.workoutsById}
+            userList={this.state.usersById}
+           /> } />
       </Switch>
     </div>
     );

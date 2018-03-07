@@ -5,7 +5,6 @@ import WorkoutSmall from './WorkoutSmall';
 function WorkoutList(props) {
   return (
     <div>
-
       <div className='cards'>
         {Object.keys(props.workoutList).map(function(workoutID) {
           var workout = props.workoutList[workoutID];
