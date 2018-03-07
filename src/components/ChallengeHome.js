@@ -1,13 +1,16 @@
 import React from 'react';
 import './styles/ChallengeHome.css';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import SiteNav from './SiteNav';
 import SiteFooter from './SiteFooter';
+import Hero from './Hero';
+import ChallengeHomeImage from './../assets/images/ChallengeHomeImage.jpg'
 
-function ChallengeHome(){
+function ChallengeHome(props){
   return(
     <div>
       <SiteNav/>
+      <Hero homeImage={ChallengeHomeImage}/>
       <div className='challenge-header center'>
         <h3>21 Days of Squats!</h3>
         <p className='flow-text'>A curated list of 21 workouts to help you stay in shape</p>
