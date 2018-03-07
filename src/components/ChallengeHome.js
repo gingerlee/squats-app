@@ -21,6 +21,7 @@ function ChallengeHome(props){
       <div className='workout-list'>
         <WorkoutList workoutList={props.workoutList} />
       </div>
+      <hr/>
       <h4 className='center'>Team List</h4>
       <div className='team-list'>
         <TeamList userList={props.userList} />
