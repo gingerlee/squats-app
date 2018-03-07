@@ -7,16 +7,17 @@ function WorkoutList(props) {
     <div>
 
       <div className='cards'>
-        {props.workoutList.map((workout, index) =>
-          <WorkoutSmall
+        {Object.keys(props.workoutList).map(function(workoutID) {
+          var workout = props.workoutList[workoutID];
+          return <WorkoutSmall
             title={workout.title}
             day={workout.day}
             duration={workout.duration}
             level={workout.level}
             intensity={workout.intensity}
             image={workout.imgae}
-            key={index} />
-        )}
+            key={workoutID} />
+        })}
       </div>
       <style jsx>{`
           .cards {
