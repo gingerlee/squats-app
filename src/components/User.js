@@ -3,13 +3,17 @@ import PropTypes from 'prop-types';
 
 function User(props) {
   return (
-    <div className='card'>
+    <div className='card user'>
       <img src={props.image} />
       <h4>{props.name}</h4>
       <h5>{props.title}</h5>
       <style jsx>{`
-        .card {
+        .user {
           padding: 15px;
+          width: 20vw;
+        }
+        img {
+          width: 17vw;
         }
       `}</style>
     </div>
