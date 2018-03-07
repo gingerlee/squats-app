@@ -12,12 +12,12 @@ class App extends React.Component {
     this.state = {
       workoutsById: {
         1: {
+          image: './../assets/images/miss-piggy-workout1.jpg',
           title: 'Jump!',
           day: 'Day 1',
           duration: '30min',
           level: 'Intermediate',
           intensity: 'Medium',
-          image: '',
           videoURL: 'https://www.youtube.com/watch?v=E4tiWhsQhQg&list=PL5lPziO_t_VgdnI02Bi4XDlJTphcuX6dW',
           users: []
         },

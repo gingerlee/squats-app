@@ -10,12 +10,13 @@ function WorkoutList(props) {
         {Object.keys(props.workoutList).map(function(workoutID) {
           var workout = props.workoutList[workoutID];
           return <WorkoutSmall
+            image={workout.image}
             title={workout.title}
             day={workout.day}
             duration={workout.duration}
             level={workout.level}
             intensity={workout.intensity}
-            image={workout.imgae}
+            url={workout.videoURL}
             key={workoutID} />
         })}
       </div>
