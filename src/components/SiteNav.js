@@ -6,8 +6,9 @@ import { Link } from 'react-router-dom';
 function SiteNav() {
   return (
     <div>
-      <Navbar brand='SQUATS' right>
+      <Navbar className='black' brand=' SQUATS' right>
         <NavItem><Link to='/challenge'>Challenge Home</Link></NavItem>
+        <NavItem><Link to='/about'>About</Link></NavItem>
       </Navbar>
     </div>
   )

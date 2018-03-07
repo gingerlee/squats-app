@@ -1,7 +1,4 @@
-a:hover {
-  opacity: .5;
-}
-div {
+Navbar {
   display: flex;
   justify-content: center;
   padding: 2em;
