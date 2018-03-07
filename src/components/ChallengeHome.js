@@ -3,6 +3,7 @@ import './styles/ChallengeHome.css';
 import PropTypes from 'prop-types';
 import SiteNav from './SiteNav';
 import SiteFooter from './SiteFooter';
+// import WorkoutList from './WorkoutList';
 import { ChallengeHomeImage }  from './../assets/images/ChallengeHomeImage.jpg';
 
 function ChallengeHome(props){
@@ -18,19 +19,19 @@ function ChallengeHome(props){
     </div>
   );
 }
-//
-// ChallengeHome.propTypes = {
-//   workoutList: PropTypes.object,
-//   userList: PropTypes.object
-// };
+
+ChallengeHome.propTypes = {
+  workoutList: PropTypes.object,
+  userList: PropTypes.object
+};
 
 export default ChallengeHome;
 
 
+//
 // <div className='workout-list'>
 //   <WorkoutList workoutList={props.workoutList} />
 // </div>
-//
 // <div className='team-list'>
 //   <TeamList userList={props.userList} />
 // </div>
