@@ -11,7 +11,7 @@ function WorkoutSmall(props) {
       <p>Duration: {props.duration}</p>
       <p>Intensity: {props.intensity}</p>
       <p>Level: {props.level}</p>
-      <Button className='black text-white' href={props.url}>Workout!</Button>
+      <Button className='black text-white' waves='light' node='a' target='_blank' href={props.url} >Workout!</Button>
       <style jsx>{`
         .card {
           padding: 15px;
