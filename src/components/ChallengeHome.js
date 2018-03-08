@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/ChallengeHome.css';
 import PropTypes from 'prop-types';
 import SiteNav from './SiteNav';
-// import SiteFooter from './SiteFooter';
+import SiteFooter from './SiteFooter';
 import WorkoutList from './WorkoutList';
 import TeamList from './TeamList';
 import { ChallengeHomeImage }  from './../assets/images/ChallengeHomeImage.jpg';
@@ -37,10 +37,10 @@ function ChallengeHome(props){
       <div className='team-list'>
         <TeamList userList={props.userList} />
       </div>
+      <SiteFooter/>
     </div>
   );
 }
-// <SiteFooter/>
 
 ChallengeHome.propTypes = {
   workoutList: PropTypes.object,
