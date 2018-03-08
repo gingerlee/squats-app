@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import logo from './../assets/images/logo.svg';
-import './styles/App.css';
 import Error404 from './Error404';
 import Welcome from './Welcome';
 import ChallengeHome from './ChallengeHome';
 import { Switch, Route, Link } from 'react-router-dom';
-
 import {usersByIdList, workoutsByIdList}  from './../constants/initialState';
 
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles/SiteNav.css';
 import {Navbar, NavItem} from 'react-materialize';
 import { Link } from 'react-router-dom';
 
@@ -9,10 +8,6 @@ function SiteNav() {
     <style jsx>{`
       .logo {
         padding-left: 10px;
-      }
-      Navbar {
-        
-
       }
     `}</style>
       <Navbar className='black logo' brand='SQUATS' right>

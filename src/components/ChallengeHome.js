@@ -32,7 +32,7 @@ function ChallengeHome(props){
         </div>
         <Parallax imageSrc='https://images.unsplash.com/photo-1484981184820-2e84ea0af397?ixlib=rb-0.3.5&s=7011f942bda82926da392347b7b178cd&auto=format&fit=crop&w=1350&q=80'/>
       </div>
-      <hr/>
+      
       <h4 className='center'>Team List</h4>
       <div className='team-list'>
         <TeamList userList={props.userList} />
