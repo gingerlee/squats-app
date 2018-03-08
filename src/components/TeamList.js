@@ -19,14 +19,6 @@ function TeamList(props) {
     </div>
   );
 }
-// <style jsx>{`
-//   .tiles {
-//     display: grid;
-//     grid-gap: 100px;
-//     grid-template-columns: repeat(2, 1fr);
-//     margin: 0 2em;
-//   }
-//   `}</style>
 
 TeamList.propTypes = {
   userList: PropTypes.object

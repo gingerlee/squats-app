@@ -1,20 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import WorkoutSmall from './WorkoutSmall';
+import {Row} from 'react-materialize';
 
 function WorkoutList(props) {
   return (
     <div>
-      <style jsx>{`
-          .cards {
-            display: grid;
-            grid-gap: 30px;
-            grid-template-columns: repeat(2, 1fr);
-            margin: 0 3em;
-          }
-          `}</style>
-        
-      <div className='cards'>
+    
+
+      <Row className='cards'>
         {Object.keys(props.workoutList).map( workoutID => {
           const workout = props.workoutList[workoutID];
           return <WorkoutSmall
@@ -27,7 +21,7 @@ function WorkoutList(props) {
             url={workout.videoURL}
             key={workoutID} />
         })}
-      </div>
+      </Row>
     </div>
   );
 }

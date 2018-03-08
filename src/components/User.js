@@ -7,11 +7,12 @@ function User(props) {
     <div>
       <style jsx>{`
         .user {
-          padding: 15px;
           width: 20vw;
+
+
         }
         .userImg {
-          width: 17vw;
+          width: 100%;
         }
         `}</style>
       <Col s={12} m={6} l={4} className='card user'>
