@@ -5,6 +5,15 @@ import PropTypes from 'prop-types';
 function TeamList(props) {
   return (
     <div>
+    <style jsx>{`
+      .tiles {
+        display: grid;
+        grid-gap: 100px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 2em;
+      }
+      `}</style>
+      
       <div className='tiles'>
         {Object.keys(props.userList).map( userID => {
           const user = props.userList[userID];
@@ -15,14 +24,6 @@ function TeamList(props) {
             key={userID} />
         })}
       </div>
-      <style jsx>{`
-          .tiles {
-          display: grid;
-          grid-gap: 100px;
-          grid-template-columns: repeat(2, 1fr);
-          margin: 0 2em;
-        }
-      `}</style>
     </div>
   );
 }

@@ -1,11 +1,17 @@
 import React from 'react';
-import './styles/Footer.css';
 import { Link } from 'react-router-dom';
 import { Footer } from 'react-materialize';
 
 function SiteFooter() {
   return (
     <div>
+    <style jsx>{`
+      Footer {
+        bottom: 0;
+        width: 100%;
+        margin: 0 auto;
+      }
+    `}</style>
       <Footer copyrights="2018 MIT Copyright"
         className='example black'
         >
