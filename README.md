@@ -61,17 +61,20 @@ For the project to build, **these files must exist with exact filenames**:
 
 ## Launching Squats App
 
-Clone this repository through the command line: [Squats App](https://github.com/gingerlee/squats-app.git)
-In the project directory, you can run:
+* Clone this repository on your desktop through the command line: [Squats App](https://github.com/gingerlee/squats-app.git)
 
-### `npm start`
-### `npm start`
+* In the project directory,  run:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ `npm install`
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+ then
+
+ `npm start` which tuns the app in the development mode.<br>
+
+* Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+* The page will reload if you make edits.<br>
+* You will also see any lint errors in the console.
 
 Notes:
 declarative routing React JS

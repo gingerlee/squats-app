@@ -10,7 +10,7 @@ function SiteFooter() {
         className='example black'
         >
         <h5 className="white-text">Squats App</h5>
-        <p className="grey-text text-lighten-4">Keep motivated with your friends -- Now that's Squat's up!</p>
+        <p className="grey-text text-lighten-4">Keep motivated with your friends</p>
       </Footer>
 
     </div>
