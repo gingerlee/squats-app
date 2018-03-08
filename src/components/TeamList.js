@@ -6,8 +6,8 @@ function TeamList(props) {
   return (
     <div>
       <div className='tiles'>
-        {Object.keys(props.userList).map(function(userID) {
-          var user = props.userList[userID];
+        {Object.keys(props.userList).map( userID => {
+          const user = props.userList[userID];
           return <User
             image={user.image}
             name={user.name}

@@ -5,7 +5,8 @@ import Error404 from './Error404';
 import Welcome from './Welcome';
 import ChallengeHome from './ChallengeHome';
 import { Switch, Route, Link } from 'react-router-dom';
-
+import MissPiggy from './../assets/images/miss-piggy-workout1.jpg'
+;
 
 class App extends React.Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class App extends React.Component {
       currentWorkoutId: 1,
       workoutsById: {
         1: {
-          image: './../assets/images/miss-piggy-workout1.jpg',
+          image: MissPiggy,
           title: 'Jump!',
           day: 'Day 1',
           duration: '30min',
@@ -24,7 +25,7 @@ class App extends React.Component {
           users: []
         },
         2: {
-          title: 'Step up to your goals',
+          title: 'Step it up',
           day: 'Day 2',
           duration: '40min',
           level: 'Advanced',
@@ -43,6 +44,36 @@ class App extends React.Component {
           videoURL: 'https://www.youtube.com/watch?v=EkWBqgXUXDY',
           users: []
         },
+        4: {
+          title: 'Big Little Thighs',
+          day: 'Day 4',
+          duration: '27min',
+          level: 'Intermediate',
+          intensity: 'Medium',
+          image: '',
+          videoURL: 'https://www.youtube.com/watch?v=EkWBqgXUXDY',
+          users: []
+        },
+        5: {
+          title: '21 Jump Cheek',
+          day: 'Day 5',
+          duration: '30min',
+          level: 'Beginner',
+          intensity: 'Low',
+          image: '',
+          videoURL: 'https://www.youtube.com/watch?v=EkWBqgXUXDY',
+          users: []
+        },
+        6: {
+          title: 'Sweat it out',
+          day: 'Day 6',
+          duration: '35min',
+          level: 'Advanced',
+          intensity: 'High',
+          image: '',
+          videoURL: 'https://www.youtube.com/watch?v=EkWBqgXUXDY',
+          users: []
+        },
       },
       usersById: {
         1: {
@@ -56,10 +87,24 @@ class App extends React.Component {
           title: 'Team Member',
           image: 'https://avatars0.githubusercontent.com/u/28492736?s=460&v=4',
           completedWorkouts: []
+        },
+        3: {
+          name: 'Lena',
+          title: 'Team Member',
+          image: 'https://avatars2.githubusercontent.com/u/32624171?s=460&v=4',
+          completedWorkouts: []
+        },
+        4: {
+          name: 'Jack',
+          title: 'Excutive Hobo',
+          image: 'https://avatars0.githubusercontent.com/u/26096986?s=460&v=4',
+          completedWorkouts: []
         }
       },
     };
   }
+
+
 
   render() {
     return (

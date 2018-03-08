@@ -5,9 +5,18 @@ import WorkoutSmall from './WorkoutSmall';
 function WorkoutList(props) {
   return (
     <div>
+      <style jsx>{`
+          .cards {
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0 3em;
+          }
+          `}</style>
+        
       <div className='cards'>
-        {Object.keys(props.workoutList).map(function(workoutID) {
-          var workout = props.workoutList[workoutID];
+        {Object.keys(props.workoutList).map( workoutID => {
+          const workout = props.workoutList[workoutID];
           return <WorkoutSmall
             image={workout.image}
             title={workout.title}
@@ -19,14 +28,6 @@ function WorkoutList(props) {
             key={workoutID} />
         })}
       </div>
-      <style jsx>{`
-          .cards {
-          display: grid;
-          grid-gap: 30px;
-          grid-template-columns: repeat(2, 1fr);
-          margin: 0 3em;
-        }
-      `}</style>
     </div>
   );
 }

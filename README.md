@@ -59,10 +59,12 @@ For the project to build, **these files must exist with exact filenames**:
 * `public/index.html` is the page template;
 * `src/index.js` is the JavaScript entry point.
 
-## Available Scripts
+## Launching Squats App
 
+Clone this repository through the command line: [Squats App](https://github.com/gingerlee/squats-app.git)
 In the project directory, you can run:
 
+### `npm start`
 ### `npm start`
 
 Runs the app in the development mode.<br>
@@ -70,3 +72,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
+
+Notes:
+declarative routing React JS
+create WorkoutLarge component - log props - route info and id for the workout
