@@ -6,9 +6,15 @@ import {Row} from 'react-materialize';
 function WorkoutList(props) {
   return (
     <div>
-    
+    <style jsx>{`
+        .cards {
+          max-height: 100%;
+        }
+        
+        `}</style>
 
-      <Row className='cards'>
+      <Row>
+      <div className='cards'>
         {Object.keys(props.workoutList).map( workoutID => {
           const workout = props.workoutList[workoutID];
           return <WorkoutSmall
@@ -21,6 +27,7 @@ function WorkoutList(props) {
             url={workout.videoURL}
             key={workoutID} />
         })}
+        </div>
       </Row>
     </div>
   );

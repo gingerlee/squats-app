@@ -34,7 +34,7 @@ export const workoutsByIdList = {
   },
   4: {
     image: images.workout4,
-    title: 'Big Little Thighs',
+    title: 'Push it',
     day: 'Day 4',
     duration: '27min',
     level: 'Intermediate',
@@ -43,7 +43,7 @@ export const workoutsByIdList = {
     users: []
   },
   5: {
-    image: images.workout5,
+    image: images.workout2,
     title: 'Abs',
     day: 'Day 5',
     duration: '30min',
@@ -103,7 +103,7 @@ export const workoutsByIdList = {
     users: []
   },
   11: {
-    image: images.workout5,
+    image: images.workout2,
     title: 'Abs',
     day: 'Day 11',
     duration: '30min',
@@ -163,7 +163,7 @@ export const workoutsByIdList = {
     users: []
   },
   17: {
-    image: images.workout5,
+    image: images.workout2,
     title: 'Abs',
     day: 'Day 17',
     duration: '30min',
